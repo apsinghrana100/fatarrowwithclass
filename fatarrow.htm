@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class student{
+        static count=0
+
+constructor(name,age,phone,marks)
+{
+    this.name=name;
+    this.age=age;
+    this.phone=phone;
+    this.marks=marks;
+    student.count++;
+}
+
+
+setplacementAge(minplacemnetAge){
+	return(minMarks)=>{
+	
+	if(this.marks > minMarks && this.age > minplacemnetAge){
+		console.log(this.name + "is ready for placement");
+	}else
+	{
+		console.log(this.name + "is not ready for placement");
+	}
+}
+}
+
+
+
+}
+
+const obj1=new student("ajay",23,9978092387,50);
+const obj2=new student("vijay",24,9978092387,50);
+const obj3=new student("sanay",12,9978092387,20);
+const obj4=new student("majay",29,9978092387,30);
+const obj5=new student("jay",20,9978092387,50);
+// obj1.checkelgibility();
+console.log(student.count);
+obj1.setplacementAge(18)(40);
+obj2.setplacementAge(18)(40);
+obj3.setplacementAge(18)(40);
+obj4.setplacementAge(18)(40);
+obj5.setplacementAge(18)(40);
+    </script>
+</body>
+</html>
